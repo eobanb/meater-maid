@@ -9,7 +9,7 @@ meater-maid has been tested with:
 * Google Chrome 72.0.3626.109
 * puppeteer-core 1.12.2.
 
-meater-maid is written to use puppeteer-core (to install, run `sudo npm -g install puppeteer-core` ). Alternatively, meater-maid can be modified to run with puppeteer (which bundles chromium). The advantage to the latter approach is you don't need to specify the Devtools websocket URL; you can just let puppeteer launch its own instance of chromium.
+meater-maid is written to use puppeteer-core (to install, run `sudo npm -g install puppeteer-core` ). Alternatively, meater-maid can be modified to run with puppeteer (which bundles chromium). The advantage to the latter approach is you don't need to specify a devtools websocket URL for controlling chromium; you can just let puppeteer launch its own instance.
 
 ## usage
 
