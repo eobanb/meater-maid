@@ -9,21 +9,9 @@ meater-maid has been tested with:
 * Google Chrome 72.0.3626.109
 * puppeteer-core 1.12.2.
 
-meater-maid is written to use puppeteer-core (to install, run `sudo npm -g install puppeteer-core` ). Alternatively, meater-maid can be modified to run with puppeteer (which bundles chromium). The advantage to the latter approach is you don't need to specify a devtools websocket URL for controlling chromium; you can just let puppeteer launch its own instance.
+meater-maid is written to use puppeteer-core (to install, run `sudo npm -g install puppeteer-core` ). Alternatively, meater-maid can be modified to run with puppeteer (which bundles chromium).
 
 ## usage
-
-To launch headless Chrome, run:
-
-`/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --headless --remote-debugging-port=9222`
-
-This will output the ws URL to use, which looks like this:
-
-`DevTools listening on ws://127.0.0.1:9222/devtools/browser/eb439886-ad8f-412b-ac26-a4a4495a5ccf`
-
-Copy the ws:// URL into line 7 of meater-maid.js:
-
-`browserWSEndpoint: 'ws://127.0.0.1:9222/devtools/browser/eb439886-ad8f-412b-ac26-a4a4495a5ccf'`
 
 Specify your Meater cloud URL on line 10:
 
