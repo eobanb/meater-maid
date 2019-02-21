@@ -1,5 +1,5 @@
 # meater-maid
-meater-maid takes the cloud web page of a Meater smart thermometer and outputs it in a machine-readable format.
+meater-maid scrapes the cloud web page of a Meater smart thermometer and outputs it in a plain-text machine-readable format.
 
 ## setup
 meater-maid has been tested with:
