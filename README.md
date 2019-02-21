@@ -13,7 +13,7 @@ meater-maid is written to use puppeteer-core (to install, run `sudo npm -g insta
 
 ## usage
 
-Specify your Meater cloud URL on line 10:
+Specify your Meater cloud URL on line 12:
 
 ` await page.goto('https://cooks.cloud.meater.com/cook/9b9b7eb0-bd79-4c29-a8f4-a218b8122371');`
 
