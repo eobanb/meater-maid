@@ -5,9 +5,9 @@ module.paths.push('/usr/local/lib/node_modules'); // needed on macOS; your node_
 const puppeteer = require('puppeteer-core'); // optionally change to 'puppeteer' instead of puppeteer-core
 
 (async () => {
-  const browser = await puppeteer.connect({
-    browserWSEndpoint: 'ws://127.0.0.1:9222/devtools/browser/eb439886-ad8f-412b-ac26-a4a4495a5ccf'
-  }); // optionally change to .launch (using puppeteer), have not tested this however
+  const browser = await puppeteer.launch({
+    executablePath: '/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome'
+  });
   const page = await browser.newPage();
   await page.goto('https://cooks.cloud.meater.com/cook/9b9b7eb0-bd79-4c29-a8f4-a218b8122371'); // set this to your own URL
   await page.waitForSelector('.internal-value'); // wait for page javascript to finish running
